@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon clone</title>
+  <link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div class="wrap">
+      <div class="brand" aria-label="brand">
+        <div style="color:#fff;font-weight:700">Amazon</div>
+      </div>
+
+      <form class="search" role="search" aria-label="search products" onsubmit="return false;">
+        <input type="search" placeholder="Search products, brands and more" aria-label="search input">
+        <button aria-label="search button">Search</button>
+      </form>
+
+      <div class="account-cart">
+        <div class="account">
+          <div class="small" style="color:#fff">Hello, Sign in</div>
+          <div style="font-weight:700;color:#fff">Account & Lists</div>
+        </div>
+        <div class="cart">
+          <div class="icon">🛒</div>
+          <div style="font-weight:700;color:#fff">Cart</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAV -->
+  <nav class="mainnav" aria-label="main navigation">
+    <div class="wrap">
+      <a href="#">All</a>
+      <a href="https://www.amazon.in/alm/storefront?almBrandId=ctnow&ref_=nav_cs_grocery">Fresh</a>
+      <a href="https://www.amazon.in/minitv?ref_=nav_avod_desktop_topnav">MX Player</a>
+      <a href="https://www.amazon.in/b/32702023031?node=32702023031&ld=AZINSOANavDesktop_T3&ref_=nav_cs_sell_T3">Sell</a>
+      <a href="https://www.amazon.in/gp/bestsellers/?ref_=nav_cs_bestsellers">Bestsellers</a>
+      <a href="https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles">Mobiles</a>
+      <a href="https://www.amazon.in/deals?ref_=nav_cs_gb">Today's Deals</a>
+      <span style="margin-left:auto;color:#cbd5e1">Deliver to India</span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap banner">
+      <div class="banner-overlay">
+        <h1>Big deals. Everyday low prices.</h1>
+        <p>Save on top brands across categories. Free delivery over ₹499*</p>
+        <div class="cta-row" style="margin-top:.6rem">
+          <a href="https://www.amazon.in/Books/b/?ie=UTF8&node=976389031&ref_=nav_cs_books">Books</a>
+          <a href="https://www.amazon.in/deals?ref_=nav_cs_gb"> offers</a>
+        </div>
+      </div>
+    </div>
+
+    <aside class="aside">
+      <h3>Top picks for you</h3>
+      <div class="pick">
+        <div class="pic"
+          style="background-image:url('https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQtGCO6IfLAlXhn4ao4s3pFw2ATcwo8Qs9At3NWOZx-0FWczxxWB_eCRGCg0wGMBbush0_SY3lvV3kTewi4wmORtdJS4VGUIvFDFhsvkZQ6oLnE6vHwx0LH');background-size:cover;background-position:center">
+        </div>
+        <div>
+          <div style="font-weight:700">Smartwatch</div>
+          <div class="muted">From ₹1,299</div>
+        </div>
+      </div>
+
+      <div class="pick">
+        <div class="pic"
+          style="background-image:url('https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS7nwEePy4kG7S6X5YNMy508wfLlWd4quUJ--KRoneraaJviSgg_PiuBLLElrHe_vnFt5BZZiYsAiGMA5mI9UUEYwqFfUIAWeHSXodwMn5hQWfKt-ZJ8i6pPP3NM17HCobKFMSDIRApQA&usqp=CAc');background-size:cover;background-position:center">
+        </div>
+        <div>
+          <div style="font-weight:700">Wireless Earbuds</div>
+          <div class="muted">From ₹599</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <!-- CATEGORIES -->
+  <div class="wrap cats" aria-label="categories">
+    <button class="cat">Mobiles</button>
+    <button class="cat">Computers</button>
+    <button class="cat">TV & Appliances</button>
+    <button class="cat">Home & Kitchen</button>
+    <button class="cat">Beauty</button>
+    <button class="cat">Toys</button>
+  </div>
+
+  <!-- PRODUCTS -->
+  <main class="wrap container" role="main">
+    <div class="section-head">
+      <h2>Featured products</h2>
+      <div class="muted">Showing 1-8 of 200+</div>
+    </div>
+
+    <div class="grid" aria-live="polite">
+      <!-- Product 1 -->
+      <article class="card" role="article">
+        <div class="thumb">
+          <img src="https://m.media-amazon.com/images/I/71TW8jQ7YBL.jpg" alt="Headphones">
+        </div>
+        <div class="title">Wireless Bluetooth Headphones — Comfortable fit</div>
+        <div class="muted">Brand • 4.2 ★ (1,245)</div>
+        <div class="price">₹1,299 <span class="strike">₹1,999</span></div>
+        <div class="actions">
+          <button class="btn buy">Buy Now</button>
+          <button class="btn wish">Wishlist</button>
+        </div>
+      </article>
+
+      <!-- Product 2 -->
+      <article class="card">
+        <div class="thumb">
+          <img src="https://m.media-amazon.com/images/I/61h8lcXTyeL.jpg" alt="Smartwatch">
+        </div>
+        <div class="title">Smartwatch with heart-rate monitor</div>
+        <div class="muted">Brand • 4.0 ★ (8,900)</div>
+        <div class="price">₹2,499</div>
+        <div class="actions">
+          <button class="btn buy">Buy Now</button>
+          <button class="btn wish">Wishlist</button>
+        </div>
+      </article>
+
+      <!-- Product 3 -->
+      <article class="card">
+        <div class="thumb">
+          <img src="https://m.media-amazon.com/images/I/814pC5oOU3L.jpg" alt="Power bank">
+        </div>
+        <div class="title">Portable Power Bank 20,000mAh</div>
+        <div class="muted">Brand • 4.6 ★ (12,300)</div>
+        <div class="price">₹999</div>
+        <div class="actions">
+          <button class="btn buy">Buy Now</button>
+          <button class="btn wish">Wishlist</button>
+        </div>
+      </article>
+
+      <!-- Product 4 -->
+      <article class="card">
+        <div class="thumb">
+          <img src="https://m.media-amazon.com/images/I/61qIEvCy6+L.jpg" alt="Earbuds">
+        </div>
+        <div class="title">Noise Cancelling Earbuds</div>
+        <div class="muted">Brand • 4.3 ★ (3,050)</div>
+        <div class="price">₹1,849</div>
+        <div class="actions">
+          <button class="btn buy">Buy Now</button>
+          <button class="btn wish">Wishlist</button>
+        </div>
+      </article>
+
+      <!-- Product 5 -->
+      <article class="card">
+        <div class="thumb">
+          <img src="https://cdn.moglix.com/p/yxklT614OlaRK-xxlarge.jpg" alt="Laptop">
+        </div>
+        <div class="title">Lightweight Laptop — 8GB RAM, 256GB SSD</div>
+        <div class="muted">Brand • 4.4 ★ (9,450)</div>
+        <div class="price">₹29,999 <span class="strike">₹34,999</span></div>
+        <div class="actions">
+          <button class="btn buy">Buy Now</button>
+          <button class="btn wish">Wishlist</button>
+        </div>
+      </article>
+
+      <!-- Product 6 -->
+      <article class="card">
+        <div class="thumb">
+          <img
+            src="https://kannankandy.com/wp-content/uploads/2025/06/BPL-43-UHD-ANDROID-493711880-i-1-1200Wx1200H-800x800.jpeg"
+            alt="TV">
+        </div>
+        <div class="title">Smart LED TV 43" — 4K HDR</div>
+        <div class="muted">Brand • 4.1 ★ (5,200)</div>
+        <div class="price">₹24,499</div>
+        <div class="actions">
+          <button class="btn buy">Buy Now</button>
+          <button class="btn wish">Wishlist</button>
+        </div>
+      </article>
+
+      <!-- Product 7 -->
+      <article class="card">
+        <div class="thumb">
+          <img src="https://m.media-amazon.com/images/I/71DODrZIvmL.jpg" alt="Kitchen">
+        </div>
+        <div class="title">Non-stick Cookware Set — 7 pieces</div>
+        <div class="muted">Brand • 4.5 ★ (7,210)</div>
+        <div class="price">₹3,299</div>
+        <div class="actions">
+          <button class="btn buy">Buy Now</button>
+          <button class="btn wish">Wishlist</button>
+        </div>
+      </article>
+
+      <!-- Product 8 -->
+      <article class="card">
+        <div class="thumb">
+          <img src="https://m.media-amazon.com/images/I/81BrMNWPLyL._AC_UY1000_.jpg" alt="Shoes">
+        </div>
+        <div class="title">Running Shoes — Comfortable & durable</div>
+        <div class="muted">Brand • 4.2 ★ (2,540)</div>
+        <div class="price">₹1,899</div>
+        <div class="actions">
+          <button class="btn buy">Buy Now</button>
+          <button class="btn wish">Wishlist</button>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="wrap">
+      <div>
+        <div style="font-weight:700;color:#fff;margin-bottom:.4rem">Get to know ShopZone</div>
+        <div class="muted">About • Careers • Press</div>
+      </div>
+      <div class="muted">© ShopZone — Demo clone for learning (images from picsum.photos)</div>
+    </div>
+  </footer>
+</body>
+
+</html>
